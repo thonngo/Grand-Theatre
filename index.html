@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="eng">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width initial-scale=1.0" />
+    <meta name="format-detection" content="telephone=no">
+    <title>Grand Theatre</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <!-- <link href="/path/to/jquery.fancybox.min.css" rel="stylesheet"> -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css"/>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <div class="wrapper">
+        <header class="header">
+            <!-- <div class="header__container container"> -->
+                <div class="header__column header__column_1">
+                    <div class="header__social social">
+                        <div class="social__text">контактная информация</div>
+                        <img class="social__line" src="./img/social/Line 2.svg" alt="line">
+                        <div class="social__icons">
+                            <img class="social__img" src="./img/social/instagram--active.svg" alt="insta">
+                            <img class="social__img" src="./img/social/Vector.svg" alt="faceebook">
+                            <img class="social__img" src="./img/social/Vector (1).svg" alt="vk">
+                            <img class="social__img" src="./img/social/Vector (2).svg" alt="YouTube">
+                        </div>
+                    </div>
+                </div>
+                <div class="header__column header__column_2">
+                    <div class="header__body header__body_1">
+                        <nav class="header__menu menu">
+                            <ul class="menu__list">
+                                <li class="menu__item">
+                                    <a data-goto=".header__body header__body_2" href="#!" class="menu__link">Главная</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".main-block" href="#!" class="menu__link">О театре</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".production" href="#!" class="menu__link">Наши постановки</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a href="#!" class="menu__link">Партнеры театра</a>
+                                </li>
+                                <li class="menu__item">
+                                    <a data-goto=".partners" href="#!" class="menu__link">Контакты</a>
+                                </li>
+                            </ul>
+                        </nav>
+                        <div class="burger-menu">
+                            <a href="#!" class="burger-menu__button">
+                                <span class="burger-menu__lines"></span>
+                            </a>
+                            <nav class="burger-menu__nav">
+                                <ul class="burger-menu__list">
+                                    <li class="burger-menu__item">
+                                        <a data-goto=".header__body header__body_2" href="#!" class="burger-menu__link">Главная</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a data-goto=".main-block" href="#!" class="burger-menu__link">О театре</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a data-goto=".production" href="#!" class="burger-menu__link">Наши постановки</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a data-goto=".partners" href="#!" class="burger-menu__link">Партнеры театра</a>
+                                    </li>
+                                    <li class="burger-menu__item">
+                                        <a data-goto=".metsenat" href="#!" class="burger-menu__link">Контакты</a>
+                                    </li>
+                                </ul>
+                                <div class="burger-menu__social">
+                                    <img class="burger-menu__img" src="./img/mobile/Vector (8).svg" alt="faceebook">
+                                    <img class="burger-menu__img" src="./img/mobile/instagram--active (1).svg" alt="insta">
+                                    <img class="burger-menu__img" src="./img/mobile/Vector (10).svg" alt="YouTube">
+                                    <img class="burger-menu__img" src="./img/mobile/Vector (11).svg" alt="vk">
+                                </div>
+                            </nav>
+                            <div class="burger-menu__overlay"></div>
+                        </div>
+                        <div class="header__phone phone">
+                            <a class="phone__number" href="tel:+74951234567">+7 495 123-45-67</a>
+                        </div>
+                    </div>
+                    <div class="header__body header__body_2">
+                        <div class="header__item item-grand">
+                            <div class="item-grand__column item-grand__column_1">
+                                <div class="item-grand__title">Большой театр</div>
+                                <div class="item-grand__text">Большо́й теа́тр — петербургский театр, существовавший в 1784—1886 годах, с 1886 года — Петербургская консерватория. Первое постоянное в Санкт-Петербурге, крупнейшее в России и одно из крупнейших театральных зданий в Европе XVIII.</div>
+                                <div class="item-grand__button">
+                                    <a href="#!" class="button button_header">афиша</a>
+                                </div>
+                            </div>
+                            <div class="item-grand__column item-grand__column_2">
+                                 <div class="item-grand__image image">
+                                        <img class="image__front" src="./img/image 3.png" alt="front">
+                                        <img class="image__back" src="./img/image 4.png" alt="back">
+                                </div>
+                                <div class="item-grand__arrows arrows">
+                                        <button class="arrows__left">
+                                            <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M0.292892 7.2929C-0.0976296 7.68342 -0.0976295 8.31659 0.292893 8.70711L6.65685 15.0711C7.04738 15.4616 7.68054 15.4616 8.07107 15.0711C8.46159 14.6805 8.46159 14.0474 8.07107 13.6569L2.41422 8L8.07107 2.34315C8.46159 1.95262 8.46159 1.31946 8.07107 0.928935C7.68054 0.538411 7.04738 0.538411 6.65685 0.928935L0.292892 7.2929ZM41 7L1 7L1 9L41 9L41 7Z" fill="#C4C4C4"/>
+                                            </svg>
+                                            <span class="arrows__button-text arrows__button-text_left">Прев</span>
+                                        </button>
+                                        <button class="arrows__right">
+                                            <span class="arrows__button-text arrows__button-text_right">След</span>
+                                            <svg width="41" height="16" viewBox="0 0 41 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M40.7071 8.70711C41.0976 8.31659 41.0976 7.68342 40.7071 7.2929L34.3431 0.928938C33.9526 0.538414 33.3195 0.538414 32.9289 0.928938C32.5384 1.31946 32.5384 1.95263 32.9289 2.34315L38.5858 8.00001L32.9289 13.6569C32.5384 14.0474 32.5384 14.6805 32.9289 15.0711C33.3195 15.4616 33.9526 15.4616 34.3431 15.0711L40.7071 8.70711ZM-1.74846e-07 9L40 9.00001L40 7.00001L1.74846e-07 7L-1.74846e-07 9Z" fill="white"/>
+                                            </svg>
+                                        </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- </div> -->
+        </header>
+        <main class="wall">
+            <div class="wall__main-block main-block">
+                <div class="main-block__container container">
+                    <h2 class="main-block__title"><span>О</span> театре</h2>
+                    <div class="main-block__body">
+                        <div class="main-block__column main-block__column_1">
+                            <div class="main-block__item item-about">
+                                <div class="item-about__title">Самый лучший театр СПБ</div>
+                                <div class="item-block__text">Как свидетельствуют архивные документы, первое каменное здание Большого театра начали возводить в 1775 году по проекту Антонио Ринальди. В дальнейшем, после того как Ринальди упал с лесов и не мог лично наблюдать за ходом работ, Екатерина II поручила немецкому театральному декоратору и архитектору Людвигу Филиппу Тишбейну создать новый проект театра, который и был воплощён архитекторами Ф. В. фон Бауром и М. А. Деденёвым. Открытие его состоялось в 1783 году, хотя, основываясь на других свидетельствах, годом открытия можно считать 1784 год.</div>
+                            </div>
+                        </div>
+                        <div class="main-block__column main-block__column_2">
+                            <div class="main-block__item item-number">
+                                <div class="item-about__title">Немного о цифрах</div>
+                                <div class="item-number__body">
+                                    <div class="item-number__column item-number__column_1">
+                                        <img class="item-number__chair" src="./img/about/Group.svg">
+                                        <div class="item-number__text item-number__text_first"><span>1600 </span>посадочный мест</div>
+                                    </div>
+                                    <div class="item-number__column item-number__column_2">
+                                        <img class="item-number__chair" src="./img/about/Vector (4).svg">
+                                        <div class="item-number__text"><span>350 </span>лет истории</div>
+                                    </div>
+                                </div>
+                               
+                            </div>
+                        </div>
+                        <div class="main-block__column main-block__column_3">
+                            <div class="main-block__item image">
+                                <img class="image__image" src="./img/about/Rectangle 12.png">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <section class="wall__production production">
+                    <h2 class="production__title"><span>наши </span>постановки</h2>
+                    <div class="production__content">
+                        <!-- Общий контейнер -->
+                        <div class="production__list swiper">
+                            <!-- Оболочка для слайдера -->
+                            <div class="swiper-wrapper">
+                                <!-- Оболочка для отдельного слайда -->
+                                <div class="swiper-slide production-slide">
+                                    <div class="production-slide__image">
+                                        <a data-fancybox="gallery" data-caption="Caption #1" href="./img/production/Rectangle 15.png">
+                                            <img class="production-slide__img" src="./img/production/Rectangle 15.png">
+                                        </a>
+                                        <div class="production-slide__text">оскар 2020</div>
+                                        <div class="production-slide__data">сентябрь 2020</div>
+                                        <div class="production__button">
+                                            <button  class="button_loupe"><img src="./img/production/Vector (5).svg" alt="loupe"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide production-slide">
+                                    <div class="production-slide__image">
+                                        <a data-fancybox="gallery" data-caption="Caption #2" href="./img/production/Rectangle 16.png">
+                                            <img class="production-slide__img" src="./img/production/Rectangle 16.png">
+                                        </a>
+                                        <div class="production__button">
+                                            <button  class="button_loupe"><img src="./img/production/Vector (5).svg" alt="loupe"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide production-slide">
+                                    <div class="production-slide__image">
+                                        <a data-fancybox="gallery" data-caption="Caption #3" href="img/production/Rectangle 15 (1).png">
+                                            <img class="production-slide__img" src="img/production/Rectangle 15 (1).png">
+                                        </a>
+                                        <div class="production-slide__text">золотой грамофон</div>
+                                        <div class="production-slide__data">июль 2020</div>
+                                        <div class="production__button">
+                                            <button  class="button_loupe"><img src="./img/production/Vector (5).svg" alt="loupe"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide production-slide">
+                                    <div class="production-slide__image">
+                                        <a data-fancybox="gallery" data-caption="Caption #4" href="img/production/Rectangle 15 (2).png">
+                                            <img class="production-slide__img" src="img/production/Rectangle 15 (2).png">
+                                        </a>
+                                        <div class="production-slide__text">щелкунчик</div>
+                                        <div class="production-slide__data">май 2020</div>
+                                        <div class="production__button">
+                                            <button  class="button_loupe"><img src="./img/production/Vector (5).svg" alt="loupe"></button>
+                                        </div>
+                                    </div>
+                                </div>
+                           </div>
+                       </div>
+                    </div>
+            </section>
+            <section class="wall__year year">
+                <div class="year__container container">
+                    <div class="year__column year__column_1">
+                        <nav class="year__date date">
+                            <ul class="date__list">
+                                <li class="date__item">
+                                    <span class="date__link">2018</span>
+                                </li>
+                                <li class="date__item">
+                                    <span class="date__link">2019</span>
+                                </li>
+                                <li class="date__item">
+                                    <span class="date__link">2020</span>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    <div class="year__column year__column_2">
+                        <div class="year__item item-star">
+                            <div class="item-star__body star">
+                                <svg width="26" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="star-stars">
+                                    <path d="M9.60286 0.85958C9.90271 -0.0606967 11.2046 -0.0606959 11.5045 0.859581L13.2556 6.23398C13.3897 6.64561 13.7734 6.92418 14.2064 6.92418H19.8671C20.8365 6.92418 21.2388 8.16521 20.4538 8.73398L15.879 12.0486C15.5275 12.3033 15.3804 12.7555 15.5149 13.1682L17.2635 18.5349C17.5635 19.4557 16.5102 20.2227 15.7259 19.6544L11.1404 16.3321C10.7903 16.0784 10.317 16.0784 9.96695 16.3321L5.3814 19.6544C4.59714 20.2227 3.54385 19.4557 3.84387 18.5348L5.59245 13.1682C5.7269 12.7555 5.57982 12.3033 5.22836 12.0486L0.653487 8.73398C-0.131519 8.16521 0.270811 6.92418 1.24021 6.92418H6.90096C7.33389 6.92418 7.71765 6.64561 7.85177 6.23398L9.60286 0.85958Z" fill="currentColor"/>
+                                </svg>
+                                <svg width="26" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="star-stars">
+                                    <path d="M9.60286 0.85958C9.90271 -0.0606967 11.2046 -0.0606959 11.5045 0.859581L13.2556 6.23398C13.3897 6.64561 13.7734 6.92418 14.2064 6.92418H19.8671C20.8365 6.92418 21.2388 8.16521 20.4538 8.73398L15.879 12.0486C15.5275 12.3033 15.3804 12.7555 15.5149 13.1682L17.2635 18.5349C17.5635 19.4557 16.5102 20.2227 15.7259 19.6544L11.1404 16.3321C10.7903 16.0784 10.317 16.0784 9.96695 16.3321L5.3814 19.6544C4.59714 20.2227 3.54385 19.4557 3.84387 18.5348L5.59245 13.1682C5.7269 12.7555 5.57982 12.3033 5.22836 12.0486L0.653487 8.73398C-0.131519 8.16521 0.270811 6.92418 1.24021 6.92418H6.90096C7.33389 6.92418 7.71765 6.64561 7.85177 6.23398L9.60286 0.85958Z" fill="currentColor"/>
+                                </svg>
+                                <svg width="26" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="star-stars">
+                                    <path d="M9.60286 0.85958C9.90271 -0.0606967 11.2046 -0.0606959 11.5045 0.859581L13.2556 6.23398C13.3897 6.64561 13.7734 6.92418 14.2064 6.92418H19.8671C20.8365 6.92418 21.2388 8.16521 20.4538 8.73398L15.879 12.0486C15.5275 12.3033 15.3804 12.7555 15.5149 13.1682L17.2635 18.5349C17.5635 19.4557 16.5102 20.2227 15.7259 19.6544L11.1404 16.3321C10.7903 16.0784 10.317 16.0784 9.96695 16.3321L5.3814 19.6544C4.59714 20.2227 3.54385 19.4557 3.84387 18.5348L5.59245 13.1682C5.7269 12.7555 5.57982 12.3033 5.22836 12.0486L0.653487 8.73398C-0.131519 8.16521 0.270811 6.92418 1.24021 6.92418H6.90096C7.33389 6.92418 7.71765 6.64561 7.85177 6.23398L9.60286 0.85958Z" fill="currentColor"/>
+                                </svg>
+                                <svg width="26" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="star-stars">
+                                    <path d="M9.60286 0.85958C9.90271 -0.0606967 11.2046 -0.0606959 11.5045 0.859581L13.2556 6.23398C13.3897 6.64561 13.7734 6.92418 14.2064 6.92418H19.8671C20.8365 6.92418 21.2388 8.16521 20.4538 8.73398L15.879 12.0486C15.5275 12.3033 15.3804 12.7555 15.5149 13.1682L17.2635 18.5349C17.5635 19.4557 16.5102 20.2227 15.7259 19.6544L11.1404 16.3321C10.7903 16.0784 10.317 16.0784 9.96695 16.3321L5.3814 19.6544C4.59714 20.2227 3.54385 19.4557 3.84387 18.5348L5.59245 13.1682C5.7269 12.7555 5.57982 12.3033 5.22836 12.0486L0.653487 8.73398C-0.131519 8.16521 0.270811 6.92418 1.24021 6.92418H6.90096C7.33389 6.92418 7.71765 6.64561 7.85177 6.23398L9.60286 0.85958Z" fill="currentColor"/>
+                                </svg>
+                                <svg  width="26" height="24" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg" class="star-stars">
+                                    <path d="M9.60286 0.85958C9.90271 -0.0606967 11.2046 -0.0606959 11.5045 0.859581L13.2556 6.23398C13.3897 6.64561 13.7734 6.92418 14.2064 6.92418H19.8671C20.8365 6.92418 21.2388 8.16521 20.4538 8.73398L15.879 12.0486C15.5275 12.3033 15.3804 12.7555 15.5149 13.1682L17.2635 18.5349C17.5635 19.4557 16.5102 20.2227 15.7259 19.6544L11.1404 16.3321C10.7903 16.0784 10.317 16.0784 9.96695 16.3321L5.3814 19.6544C4.59714 20.2227 3.54385 19.4557 3.84387 18.5348L5.59245 13.1682C5.7269 12.7555 5.57982 12.3033 5.22836 12.0486L0.653487 8.73398C-0.131519 8.16521 0.270811 6.92418 1.24021 6.92418H6.90096C7.33389 6.92418 7.71765 6.64561 7.85177 6.23398L9.60286 0.85958Z" fill="currentColor"/>
+                                </svg>
+                            </div>
+                            <div class="item-star__text">Лучший театр по мнению театральных критиков Парижа</div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wall__partners partners">
+                <div class="partners__container container">
+                    <h2 class="partners__title"><span>партнеры </span>театра</h2>
+                    <div class="partners__logo logo">
+                        <div class="logo__body">
+                            <div class="logo__column logo__column_1">
+                                <img class="logo__icons" src="./img/logo (1).svg" alt="газпром">
+                                <img class="logo__icons" src="./img/logo (1).svg" alt="газпром">
+                                <img class="logo__icons logo__icons_prelast" src="./img/logo (1).svg" alt="газпром">
+                                <img class="logo__icons logo__icons_last" src="./img/logo (1).svg" alt="газпром">
+                            </div>
+                            <div class="logo__column logo__column_2">
+                                <img class="logo__icons" src="./img/logo (1).svg" alt="газпром">
+                                <img class="logo__icons" src="./img/logo (1).svg" alt="газпром">
+                                <img class="logo__icons logo__icons_prelast" src="./img/logo (1).svg" alt="газпром">
+                                <img class="logo__icons logo__icons_last" src="./img/logo (1).svg" alt="газпром">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="wall__metsenat metsenat">
+                <div class="metsenat__container container">
+                    <h2 class="metsenat__title"><span>стать </span>меценатом</h2>
+                    <div class="metsenat__item item-forms">
+                        <div class="item-forms__column item-forms__column_1">
+                            <div class="item-forms__telephone telephone">
+                                <a class="telephone__number" href="tel:+78121234555">+7 (812) 123-45-55</a>
+                                <a class="telephone__number" href="tel:+78121234566">+7 (812) 123-45-66</a>
+                            </div>
+                            <div class="item-forms__info info">
+                                <div class="info__email">
+                                    <a class="info__nick" href="#!">info@theater.ru</a>
+                                </div>
+                                <div class="info__adress">
+                                    <div class="info__piter">г. санкт-петербург, невский 140</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item-forms__column item-forms__column_2">
+                            <form class="item-forms__form form">
+                              <div class="form__body form__body_1">
+                                <div class="form__personal personal">
+                                  <input class="personal__name personal__name_tab _req" placeholder="Имя"/>
+                                  <input class="personal__name" placeholder="Компания"/>
+                                  <input class="personal__name personal__name_tab _req" placeholder="Телефон"/>
+                                  <input class="personal__name _req _email" placeholder="E-mail"/>
+                                </div>
+                                <div class="form__text">
+                                  * Ваши данные не будут переданы третьим лицам, 100%
+                                  вероятность. Конфиденциальность мы гарантируем, и защищаем
+                                  персональные данные согласно законку ФЗ-52.
+                                </div>
+                              </div>
+                              <div class="form__body form__body_2">
+                                <textarea class="form__message">Сообщение</textarea>
+                                <div class="form__button">
+                                  <input type="submit" class="button_form" value="отправить"/>
+                                </div>
+                                <div class="form__duplicate">
+                                  * Ваши данные не будут переданы третьим лицам, 100%
+                                  вероятность. Конфиденциальность мы гарантируем, и защищаем
+                                  персональные данные согласно законку ФЗ-52.
+                                </div>
+                              </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="footer__container container">
+                <div class="footer__text">(с) Все права защищены. Большой театр. 2020</div>
+                <div class="footer__text">Разработано d-e-n.ru</div>
+            </div>
+        </footer>
+    </div>
+    <script src="./main.js"></script>
+    <script src="./slider.js"></script>
+    <script src="./menuLink.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="./swiper.js"></script>
+    <script src="./form.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!-- <script src="/path/to/jquery.fancybox.min.js"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.umd.js"></script>
+    <script src="./fancybox.js"></script>
+  </body>
+</html>
